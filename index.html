@@ -738,9 +738,9 @@
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <p class="timeline-time">12:45 PM</p>
+        <p class="timeline-time">2:30 PM</p>
         <p class="timeline-event">Ceremonia religiosa</p>
-        <p class="timeline-detail">Parroquia de Santa Ana Jilotzingo,<br>Otzolotepec, Estado de México</p>
+        <p class="timeline-detail">Iglesia Católica San Miguel Arcángel,<br>San Miguel Mimiapan, Méx.</p>
       </div>
     </div>
     <div class="timeline-item">
@@ -762,9 +762,9 @@
   <div class="venue-cards-wrap">
     <div class="venue-card reveal">
       <p class="venue-type">Ceremonia</p>
-      <p class="venue-name">Parroquia de Santa Ana Jilotzingo</p>
-      <p class="venue-address">Jilotzingo, Otzolotepec,<br>Estado de México</p>
-      <a href="https://maps.app.goo.gl/1hAaKzivXRbZn1EC7" target="_blank" class="btn-map">Ver en el mapa</a>
+      <p class="venue-name">Iglesia Católica San Miguel Arcángel</p>
+      <p class="venue-address">San Miguel Mimiapan<br>Estado de México</p>
+      <a href="https://maps.app.goo.gl/cEnewu4uCYFpNmqv6" target="_blank" class="btn-map">Ver en el mapa</a>
     </div>
     <div class="venue-card reveal">
       <p class="venue-type">Recepción</p>
@@ -780,16 +780,22 @@
   <span class="section-tag reveal">Código de vestimenta</span>
   <h2 class="section-title reveal">Formal &amp;<br><em>elegante</em></h2>
   <div class="divider"><div class="diamond"></div></div>
-  <p class="body-text reveal">Te pedimos asistir con vestimenta formal. Aquí te compartimos la paleta de colores para que puedas coordinar.</p>
-  <div class="color-palette reveal">
-    <div class="color-swatch"><div class="swatch-circle" style="background:#d09be7;"></div><span class="swatch-label">Fiusha</span></div>
-    <div class="color-swatch"><div class="swatch-circle" style="background:#d2dbe1;border:1px solid #ddd;"></div><span class="swatch-label">Blanco</span></div>
-    <div class="color-swatch"><div class="swatch-circle" style="background:#eae4b0;"></div><span class="swatch-label">Beige</span></div>
-    <div class="color-swatch"><div class="swatch-circle" style="background:#E8F2F9;border:1px solid #ddd;"></div><span class="swatch-label">Hielo</span></div>
-    <div class="color-swatch"><div class="swatch-circle" style="background:#1A2A3A;"></div><span class="swatch-label">Marino</span></div>
-  </div>
+  <p class="body-text reveal">Te pedimos asistir con vestimenta formal y elegante. </p>
+
   <p class="body-text reveal" style="font-size:13px;margin-top:6px;">
     ⚠️ Por favor evita el color <strong>azul</strong>, reservado para la festejada.
+  </p>
+</section>
+
+  <!-- ═══════════════ REGALOS ═══════════════ -->
+<section style="background:var(--blue-ultra-pale);">
+  <span class="section-tag reveal">Sugerencia de regalo</span>
+  <h2 class="section-title reveal">Lluvia de<br><em>sobres</em></h2>
+  <div class="divider"><div class="diamond"></div></div>
+
+  <p class="body-text reveal">
+    Tu presencia es lo más importante para nosotros 💙<br><br>
+    Si deseas tener un detalle, puedes hacerlo a través de nuestra mesa de regalos en Liverpool o bien con un sobre el día del evento.
   </p>
 </section>
 
@@ -845,7 +851,7 @@ for (let i = 0; i < 30; i++) {
 // ── MUSIC ──
 
 // ── COUNTDOWN ──
-const eventDate = new Date('2026-04-25T12:45:00');
+const eventDate = new Date('2026-04-25T14:30:00');
 function updateCountdown() {
   const now = new Date();
   let diff = eventDate - now;
@@ -866,7 +872,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── FORM → WHATSAPP ──
 // ⚠️ Cambia este número por el número real (con código de país, sin + ni espacios)
-const WHATSAPP_NUMBER = '5215512345678';
+const WHATSAPP_NUMBER = '527222480892';
 
 function confirmar() {
   const name   = document.getElementById('f-name').value.trim();
