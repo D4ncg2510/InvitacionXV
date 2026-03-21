@@ -21,6 +21,14 @@
     --text-light: #7a9ab0;
   }
 
+  .photo-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
 
@@ -722,11 +730,11 @@
   <h2 class="section-title reveal">Momentos<br><em>especiales</em></h2>
   <div class="divider"><div class="diamond"></div></div>
   <div class="photo-grid reveal">
-    <div class="photo-placeholder" style="background:linear-gradient(135deg,#4a7fa5,#7baec8);">Foto 1</div>
-    <div class="photo-placeholder" style="background:linear-gradient(135deg,#2c5f8a,#4a7fa5);">Foto 2</div>
-    <div class="photo-placeholder" style="background:linear-gradient(135deg,#7baec8,#b8d4e8);">Foto 3</div>
-    <div class="photo-placeholder" style="background:linear-gradient(135deg,#3a6f95,#7baec8);">Foto 4</div>
-  </div>
+  <img src="foto1.png" class="photo-img">
+  <img src="foto2.png" class="photo-img">
+  <img src="foto3.png" class="photo-img">
+  <img src="foto4.png" class="photo-img">
+</div>
 </section>
 
 <!-- ═══════════════ ITINERARIO ═══════════════ -->
@@ -810,10 +818,16 @@
     <input type="text" id="f-phone" placeholder="WhatsApp / Teléfono" />
     <select id="f-guests">
       <option value="" disabled selected>Número de personas</option>
-      <option>Solo yo (1)</option>
+      <option>1 persona</option>
       <option>2 personas</option>
       <option>3 personas</option>
       <option>4 personas</option>
+      <option>5 personas</option>
+      <option>6 personas</option>
+      <option>7 personas</option>
+      <option>8 personas</option>
+      <option>9 personas</option>
+      <option>10 personas</option>
     </select>
     <button class="btn-confirm-form" onclick="confirmar()">Confirmar asistencia ✦</button>
     <div class="success-msg" id="success-msg">¡Gracias! Te esperamos con mucho cariño 🌸</div>
