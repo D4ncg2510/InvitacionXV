@@ -909,8 +909,7 @@ const WHATSAPP_NUMBER = '527222480892';
 function confirmar() {
   const name   = document.getElementById('f-name').value.trim();
   const phone  = document.getElementById('f-phone').value.trim();
-  const guests = document.getElementById('f-guests').value;
-  if (!name || !phone || !guests) { alert('Por favor completa todos los campos.'); return; }
+  if (!name || !phone) { alert('Por favor completa todos los campos.'); return; }
 
   const msg = `¡Hola! Confirmo mi asistencia a los XV Años de Valentina 🌸%0A%0A👤 *Nombre:* ${encodeURIComponent(name)}%0A📱 *Teléfono:* ${encodeURIComponent(phone)}%0A👥 *Personas:* ${encodeURIComponent(guests)}`;
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
